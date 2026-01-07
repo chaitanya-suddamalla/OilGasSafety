@@ -1,0 +1,291 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║               OIL & GAS SAFETY BOT - COMMAND REFERENCE                  ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🚀 START THE SERVER                                                     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+METHOD 1: Recommended (Auto-installs packages)
+  cd C:\Users\ECS LAB4\OneDrive\Desktop\sai && python run.py
+
+METHOD 2: Windows batch launcher
+  Double-click: start.bat
+
+METHOD 3: Manual startup
+  cd C:\Users\ECS LAB4\OneDrive\Desktop\sai
+  python server.py
+
+METHOD 4: Install packages first, then start
+  pip install -r requirements.txt
+  python server.py
+
+✓ Server will start on: http://localhost:5000
+✓ You should see: "Running on http://localhost:5000"
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🌐 OPEN IN BROWSER                                                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+In your web browser address bar, type:
+  http://localhost:5000
+
+Press Enter.
+
+✓ You should see the Safety Bot website
+✓ Green indicator = Connected
+✓ Red indicator = Disconnected
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 💬 EXAMPLE QUERIES TO TRY                                               ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Type these in the chat prompt box:
+
+1. Basic Question:
+   "What is a safety zone?"
+
+2. Equipment Question:
+   "What does PPE stand for?"
+
+3. Procedure Question:
+   "Explain confined space safety"
+
+4. Emergency Question:
+   "What are the emergency procedures?"
+
+5. Standards Question:
+   "What safety symbols should I know?"
+
+6. Training Question:
+   "How often should safety training be done?"
+
+✓ Bot responds with educational explanations
+✓ Each response includes important disclaimers
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ⌨️  KEYBOARD SHORTCUTS                                                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Ctrl + Enter
+  → Send message quickly (when typing in prompt box)
+
+Tab (in prompt box)
+  → Focus changes to Send button
+
+Enter (when button focused)
+  → Send message
+
+F12
+  → Open browser developer tools
+  → View console logs and network requests
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🔧 CONFIGURATION COMMANDS                                               ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+View Python version:
+  python --version
+
+Check if Flask is installed:
+  pip list | findstr Flask
+
+Install all requirements:
+  pip install -r requirements.txt
+
+Check API key in .env:
+  type .env
+
+Edit .env file:
+  notepad .env
+
+View project files:
+  dir /B
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🛑 STOP THE SERVER                                                      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+In the Command Prompt where server is running:
+  Press: Ctrl + C
+
+You'll be asked to confirm:
+  Terminate batch job (Y/N)? Y
+
+Then press Enter.
+
+✓ Server will stop
+✓ Website will disconnect (red indicator)
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🔌 NETWORK/CONNECTIVITY COMMANDS                                        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Check if port 5000 is available:
+  netstat -ano | findstr :5000
+
+Check internet connection:
+  ping google.com
+
+Check if Flask is listening:
+  curl http://localhost:5000
+
+Test API health endpoint:
+  curl http://localhost:5000/api/health
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 📁 FILE MANAGEMENT COMMANDS                                             ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Navigate to project folder:
+  cd C:\Users\ECS LAB4\OneDrive\Desktop\sai
+
+List all files:
+  dir
+
+List only Python files:
+  dir *.py
+
+View file contents:
+  type filename.txt
+
+Edit file:
+  notepad filename.txt
+
+Delete a file:
+  del filename.txt
+
+Copy a file:
+  copy source.txt destination.txt
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🚨 TROUBLESHOOTING COMMANDS                                             ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Check Python installation:
+  python --version
+
+Check if packages are installed:
+  pip list
+
+Check Flask version:
+  python -c "import flask; print(flask.__version__)"
+
+Check Google AI library:
+  python -c "import google.generativeai; print('OK')"
+
+Check .env file exists:
+  if exist .env (echo File exists) else (echo File missing)
+
+View current working directory:
+  cd
+
+Go to home directory:
+  cd %USERPROFILE%
+
+Clear screen:
+  cls
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 📖 DOCUMENTATION VIEWING                                                ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+View quick start guide:
+  type START_HERE.txt
+
+View quick reference:
+  type QUICK_START.txt
+
+View complete summary:
+  type FINAL_SUMMARY.txt
+
+View architecture:
+  type ARCHITECTURE.txt
+
+View setup instructions:
+  type SETUP_INSTRUCTIONS.md
+
+Open file in Notepad:
+  notepad START_HERE.txt
+
+Open file in default browser (if .md):
+  start SETUP_INSTRUCTIONS.md
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🎯 QUICK START FLOWCHART                                                ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+1. Open Command Prompt
+   → Press Windows Key + R → Type "cmd" → Press Enter
+
+2. Navigate to project
+   → cd C:\Users\ECS LAB4\OneDrive\Desktop\sai
+
+3. Start server
+   → python run.py
+
+4. Wait for "Running on http://localhost:5000"
+
+5. Open browser
+   → Navigate to http://localhost:5000
+
+6. See green indicator = Connected ✓
+
+7. Type safety question in prompt box
+
+8. Read response
+
+9. Repeat or stop (Ctrl+C in Command Prompt)
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ❌ ERROR RECOVERY COMMANDS                                              ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+If "Port 5000 already in use":
+  netstat -ano | findstr :5000
+  taskkill /PID {PID} /F
+
+If "Module not found":
+  pip install Flask google-generativeai python-dotenv
+
+If API key error:
+  notepad .env
+  (Check and update API key)
+
+If connection refused:
+  Check server is running in other terminal
+  Check http:// (not https://)
+
+If nothing loads:
+  Check firewall isn't blocking port 5000
+  Try different browser
+  Restart server
+
+If server won't start:
+  Check Python is installed: python --version
+  Check port 5000 is free: netstat -ano | findstr :5000
+  Reinstall packages: pip install -r requirements.txt
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+Remember: 
+  • Most common issue: Forgetting to run "python run.py" 
+  • Always check green indicator for connection status
+  • Use Ctrl+C to stop server gracefully
+
+═══════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,145 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║      🛡️  OIL & GAS PLANT SAFETY BOT - QUICK START GUIDE      ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1️⃣  VERIFY API KEY (.env file)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The .env file should contain:
+    GENAI_API_KEY=your_google_generative_ai_key_here
+
+If you don't have an API key:
+    1. Visit: https://ai.google.dev/
+    2. Click "Get API Key"
+    3. Create a new project
+    4. Copy the API key
+    5. Paste it in the .env file
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2️⃣  START THE SERVER - Choose ONE method:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ METHOD A: Python Script (Recommended)
+   > Open Command Prompt or PowerShell
+   > Run: python run.py
+   
+   This will:
+     • Check Python installation
+     • Install missing packages automatically
+     • Start the Flask server
+     • Display the server URL
+
+✨ METHOD B: Batch Script (Windows)
+   > Double-click: start.bat
+   
+✨ METHOD C: Manual Start
+   > Open Command Prompt
+   > Run: python server.py
+   
+   Note: You may need to install packages first:
+     pip install Flask google-generativeai python-dotenv
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3️⃣  OPEN THE WEBSITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+After the server starts, open your browser and visit:
+    
+    🌐 http://localhost:5000
+
+You should see:
+   ✓ Safety Bot header with connection status (green dot)
+   ✓ Chat interface with message history
+   ✓ Input box for questions
+   ✓ Sample safety questions in the sidebar
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4️⃣  USE THE CHAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Type any safety question in the text box, for example:
+   • "What is a safety zone?"
+   • "What are the emergency procedures?"
+   • "What does PPE stand for?"
+   • "Explain confined space safety"
+
+The bot will provide educational explanations.
+
+Shortcuts:
+   • Ctrl + Enter: Send message quickly
+   • Click sample buttons: Pre-fill common questions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5️⃣  STOP THE SERVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Press: Ctrl + C
+
+This will stop the Flask server.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❓ TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "Port 5000 is already in use"
+Solution: 
+   • Close other applications using port 5000
+   • Or use a different port by editing server.py
+
+Problem: "API key error" or "Authentication failed"
+Solution:
+   • Check .env file has correct API key
+   • Visit https://ai.google.dev/ to verify key is valid
+   • Make sure API key has no extra spaces
+
+Problem: "Cannot connect to server"
+Solution:
+   • Check server is still running (no Ctrl+C pressed)
+   • Check port 5000 is open in firewall
+   • Try http://localhost:5000 (not https://)
+
+Problem: "ModuleNotFoundError: No module named 'flask'"
+Solution:
+   • Python packages are missing
+   • Run: pip install Flask google-generativeai python-dotenv
+   • Or use Method A (python run.py) which installs automatically
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 PROJECT FILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+index.html          → Website page (HTML5)
+style.css           → Styling (CSS3)
+script.js           → Chat logic (JavaScript)
+server.py           → Flask backend (Python)
+run.py              → Python startup script
+start.bat           → Windows batch startup
+requirements.txt    → Python dependencies list
+.env                → Configuration (API key)
+.gitignore          → Git ignore rules
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  IMPORTANT DISCLAIMERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ This bot provides EDUCATIONAL INFORMATION ONLY
+✓ Always consult certified safety professionals
+✓ Cannot replace professional audits or certifications
+✓ Cannot be used for operational decisions
+✓ Follow your organization's safety protocols
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ READY TO START?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Check .env has your API key
+2. Run: python run.py
+3. Open: http://localhost:5000
+4. Start asking safety questions!
+
+Questions? See SETUP_INSTRUCTIONS.md for detailed help.
+
+╚════════════════════════════════════════════════════════════════╝

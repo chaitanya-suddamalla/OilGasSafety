@@ -1,0 +1,62 @@
+═══════════════════════════════════════════════════════════════════════════
+                   🚀 START YOUR SAFETY BOT IN 3 STEPS 🚀
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 1: OPEN COMMAND PROMPT
+───────────────────────────────────────────────────────────────────────────
+  Windows:
+    • Press Windows Key + R
+    • Type: cmd
+    • Press Enter
+
+  Alternative:
+    • Open File Explorer
+    • Navigate to: C:\Users\ECS LAB4\OneDrive\Desktop\sai
+    • In address bar type: cmd
+    • Press Enter
+
+
+STEP 2: NAVIGATE TO PROJECT FOLDER & START SERVER
+───────────────────────────────────────────────────────────────────────────
+
+Copy and paste this command into Command Prompt:
+
+  cd C:\Users\ECS LAB4\OneDrive\Desktop\sai && python run.py
+
+Then press ENTER.
+
+You should see:
+  ✓ Python detected
+  ✓ Dependencies installed
+  ✓ Flask server starting
+  ✓ "Running on http://localhost:5000"
+
+
+STEP 3: OPEN WEBSITE IN BROWSER
+───────────────────────────────────────────────────────────────────────────
+  • Open your web browser (Chrome, Firefox, Edge, Safari, etc.)
+  • In the address bar type: http://localhost:5000
+  • Press Enter
+
+You should see:
+  ✓ Safety Bot header
+  ✓ Green connection indicator
+  ✓ Chat interface
+  ✓ Welcome message
+
+
+═══════════════════════════════════════════════════════════════════════════
+That's it! Start asking safety questions! 🎉
+═══════════════════════════════════════════════════════════════════════════
+
+To stop the server:
+  • In Command Prompt, press: Ctrl + C
+  • Type: Y (if asked to confirm)
+  • Press Enter
+
+═══════════════════════════════════════════════════════════════════════════
+Need help? See these files:
+  • QUICK_START.txt - Fast reference guide
+  • SETUP_INSTRUCTIONS.md - Detailed instructions
+  • PROJECT_COMPLETION.txt - Complete project info
+═══════════════════════════════════════════════════════════════════════════
