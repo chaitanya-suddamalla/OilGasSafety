@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil & Gas Safety Bot - Expert Guidance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="logo">⚠️ Safety Bot</h1>
+                    <p class="tagline">Oil & Gas Plant Safety Expert System</p>
+                </div>
+                <div class="status-indicator">
+                    <span class="status-dot" id="statusDot"></span>
+                    <span class="status-text" id="statusText">Connecting...</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Sidebar with Info -->
+            <aside class="sidebar">
+                <div class="info-section">
+                    <h3>📋 About This Bot</h3>
+                    <p>Educational safety explanations for oil & gas operations</p>
+                    
+                    <h4>✅ Can Help With:</h4>
+                    <ul>
+                        <li>Safety zones & classifications</li>
+                        <li>Emergency procedures</li>
+                        <li>PPE requirements</li>
+                        <li>Safety symbols & standards</li>
+                        <li>Training information</li>
+                    </ul>
+                    
+                    <h4>❌ Cannot Do:</h4>
+                    <ul>
+                        <li>Approve operations</li>
+                        <li>Assess risks</li>
+                        <li>Replace audits</li>
+                        <li>Make compliance decisions</li>
+                    </ul>
+                </div>
+
+                <div class="sample-queries">
+                    <h3>💡 Sample Questions</h3>
+                    <button class="sample-btn" onclick="askQuestion('Explain safety zones in oil plants')">
+                        Safety zones
+                    </button>
+                    <button class="sample-btn" onclick="askQuestion('What is emergency shutdown procedure?')">
+                        Emergency shutdown
+                    </button>
+                    <button class="sample-btn" onclick="askQuestion('Explain PPE requirements')">
+                        PPE requirements
+                    </button>
+                    <button class="sample-btn" onclick="askQuestion('What are common safety symbols?')">
+                        Safety symbols
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Chat Area -->
+            <section class="chat-section">
+                <!-- Chat Display -->
+                <div class="chat-container" id="chatContainer">
+                    <div class="welcome-message">
+                        <h2>Welcome to Safety Bot</h2>
+                        <p>Ask any safety-related questions about oil & gas operations. I'll provide educational explanations to help you understand safety concepts.</p>
+                        <p class="disclaimer">⚠️ <strong>Educational Information Only:</strong> Always consult certified professionals for operational decisions.</p>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-section">
+                    <form id="queryForm" onsubmit="sendQuery(event)">
+                        <div class="input-wrapper">
+                            <textarea 
+                                id="queryInput"
+                                class="prompt-box"
+                                placeholder="Ask your safety question here... (e.g., 'What is lockout-tagout?' or 'Explain confined space entry')"
+                                rows="3"
+                            ></textarea>
+                            <button type="submit" class="send-btn" id="sendBtn">
+                                <span id="sendBtnText">Send</span>
+                                <span id="loadingSpinner" style="display: none;">⏳</span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="input-info">
+                        <small>💬 Tip: Be specific with your questions for better answers</small>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Oil & Gas Plant Safety Explainer Bot | Educational Use Only | Powered by Google Gemini AI</p>
+            <p>For operational safety decisions, consult certified professionals and follow your organization's safety protocols.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
