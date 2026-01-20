@@ -8,26 +8,14 @@
 OilGasSafety is a simple safety-focused web application to monitor, analyze, and manage safety-related information in the oil and gas industry.  
 It combines a Python backend server with a lightweight interactive frontend UI.
 
-# 🔗 **Screenshots**
+##  Screenshots
 
 ![image alt](https://github.com/chaitanya-suddamalla/OilGasSafety/blob/0b1f57d5ffb7cb4fcfafe76dddc5dde514ff0fb1/Screenshot%202026-01-07%20151122.png)
 ![image alt](https://github.com/chaitanya-suddamalla/OilGasSafety/blob/0b1f57d5ffb7cb4fcfafe76dddc5dde514ff0fb1/Screenshot%202026-01-07%20151643.png)
 
-## ✨ Features
-
-- Python backend server
-- Interactive web interface
-- Modular project structure
-- Easy local setup
-- Windows startup support
-
-## 🧰 Tech Stack
-
-**Backend:** Python 3.x  
-**Frontend:** HTML, CSS, JavaScript  
-**Tools:** Git, GitHub
 
 ## 📁 Project Structure
+
 <pre>
 ```
 OilGasSafety/
@@ -49,7 +37,29 @@ OilGasSafety/
 ├─ COMMANDS.txt             # Useful commands
 |
 └─ PROJECT_COMPLETION.txt   # Final notes
+  
 </pre>
 
+## ✨ Features
 
+- Python backend server
+- Interactive web interface
+- Modular project structure
+- Easy local setup
+- Windows startup support
+
+## 🧰 Tech Stack
+
+**Backend:** Python 3.x  
+**Frontend:** HTML, CSS, JavaScript  
+**Tools:** Git, GitHub
+
+## 🚀 Installation & Usage
+
+1. Clone the repository:
+<pre>
+```
+git clone https://github.com/chaitanya-suddamalla/OilGasSafety.git
+cd OilGasSafety
+</pre>
   
