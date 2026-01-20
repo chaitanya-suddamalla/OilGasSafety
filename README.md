@@ -46,4 +46,25 @@ The project combines a Python-based backend server with a simple and interactive
 
 ## 📁 Project Structure
 
-OilGasSafety/ ├─ run.py # Main application entry point ├─ server.py # Backend server logic ├─ requirements.txt # Python dependencies ├─ start.bat # Windows startup script ├─ .env # Environment variables (optional) ├─ .gitignore # Git ignore rules │ ├─ index.html # Frontend UI ├─ style.css # UI styling ├─ script.js # Client-side logic │ ├─ SETUP_INSTRUCTIONS.md # Setup documentation ├─ QUICK_START.txt # Quick start guide ├─ ARCHITECTURE.txt # Architecture details ├─ COMMANDS.txt # Useful commands ├─ PROJECT_COMPLETION.txt # Final notes │ └─ screenshots/ # Application screenshots
+## 📁 Project Structure
+
+```text
+OilGasSafety/
+├─ run.py                   # Main application entry point
+├─ server.py                # Backend server logic
+├─ requirements.txt         # Python dependencies
+├─ start.bat                # Windows startup script
+├─ .env                     # Environment variables (optional)
+├─ .gitignore               # Git ignore rules
+│
+├─ index.html               # Frontend UI
+├─ style.css                # UI styling
+├─ script.js                # Client-side logic
+│
+├─ SETUP_INSTRUCTIONS.md    # Setup documentation
+├─ QUICK_START.txt          # Quick start guide
+├─ ARCHITECTURE.txt         # Architecture details
+├─ COMMANDS.txt             # Useful commands
+├─ PROJECT_COMPLETION.txt   # Final notes
+│
+└─ screenshots/             # Application screenshots
