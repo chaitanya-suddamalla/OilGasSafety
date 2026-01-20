@@ -68,3 +68,19 @@ OilGasSafety/
 ├─ PROJECT_COMPLETION.txt   # Final notes
 │
 └─ screenshots/             # Application screenshots
+
+## 🛠 Installation & Running
+
+pip install -r requirements.txt
+
+python run.py
+# Or on Windows:
+start.bat
+
+## 🌐 Access Application
+
+http://localhost:5000
+
+## 📄 License
+
+MIT License
