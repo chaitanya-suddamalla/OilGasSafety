@@ -73,6 +73,7 @@ Add these environment variables - GAS_SENSOR_API_KEY, SAFETY_ALERT_API, INCIDENT
 
 
 ### configure .env file
+```
 
 You will need API keys for gas monitoring, safety alerts, and incident reporting services
 
@@ -86,6 +87,7 @@ You will need API keys for gas monitoring, safety alerts, and incident reporting
 
 4. Generate an incident reporting API key and update the
    INCIDENT_REPORT_API env variable
+```
 
 You can visit the application at http://localhost:5000 in development mode.
 
